@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.16)
-project(RaytracingWindows)
+project(RaytracingShader)
 
 set(CMAKE_CXX_STANDARD 17)
 
@@ -13,8 +13,8 @@ target_include_directories(glad PUBLIC "external/glad/include")
 include_directories(glm)
 
 # Executable
-add_executable(RaytracingWindows main.cpp)
-target_link_libraries(RaytracingWindows glfw glad OpenGL::GL)
-target_include_directories(RaytracingWindows PRIVATE external/glad/include)
+add_executable(RaytracingShader main.cpp)
+target_link_libraries(RaytracingShader glfw glad OpenGL::GL)
+target_include_directories(RaytracingShader PRIVATE external/glad/include)
 
 

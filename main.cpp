@@ -7,6 +7,8 @@
 #include <glm/glm.hpp>
 #include <glm/gtc/type_ptr.hpp>
 
+bool apple = true;
+
 GLFWwindow* window = nullptr;
 GLuint shaderProgram = 0;
 GLuint displayShader = 0;
@@ -123,17 +125,19 @@ void setBasisVectors(const glm::vec3& forward, glm::vec3& up, glm::vec3& right) 
     up = glm::normalize(glm::cross(right, forward));
 }
 bool updateCamera(glm::vec3& cameraPos, glm::vec3& camForward, glm::vec3& camUp, glm::vec3& camRight, int width, int height, float speed, float sensitivity, float dt) {
+    float centerX = apple ? float(width) / 4 : float(width) / 2;
+    float centerY = apple ? float(height) / 4 : float(height) / 2;
     double xpos, ypos;
     bool moved = false;
     glfwGetCursorPos(window, &xpos, &ypos);
-    glm::vec2 delta = glm::vec2(xpos - 720, -(ypos - 450));
+    auto delta = glm::vec2(xpos - centerX, -(ypos - centerY));
     if (delta.x*delta.x + delta.y*delta.y > 0) {
-        delta *= 2.0f/height * sensitivity;
+        delta *= 2.0f/float(height) * sensitivity;
         camForward += delta.x * camRight + delta.y * camUp;
         camForward = glm::normalize(camForward);
         moved = true;
         setBasisVectors(camForward, camUp, camRight);
-        glfwSetCursorPos(window, width/4, height/4);
+        glfwSetCursorPos(window, centerX, centerY);
     }
 
     glm::vec3 change = glm::vec3(0, 0, 0);
@@ -278,7 +282,7 @@ int main() {
 
     Timer deltaTimer;
     while (!shouldClose()) {
-        const float dt = float(deltaTimer.reset());
+        const auto dt = float(deltaTimer.reset());
         glBindFramebuffer(GL_FRAMEBUFFER, pingpongFBO[ping]);
         glViewport(0, 0, width, height);
         glClear(GL_COLOR_BUFFER_BIT);
@@ -325,8 +329,8 @@ int main() {
             frameCount = 0;
 
             // Clear ping-pong buffers to black:
-            for (int i = 0; i < 2; ++i) {
-                glBindFramebuffer(GL_FRAMEBUFFER, pingpongFBO[i]);
+            for (unsigned int i : pingpongFBO) {
+                glBindFramebuffer(GL_FRAMEBUFFER, i);
                 glViewport(0, 0, width, height);
                 glClearColor(0, 0, 0, 1);
                 glClear(GL_COLOR_BUFFER_BIT);
