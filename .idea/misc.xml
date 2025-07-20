@@ -7,7 +7,7 @@
   <component name="CidrRootsConfiguration">
     <excludeRoots>
       <file path="$PROJECT_DIR$/external" />
-      <file path="$PROJECT_DIR$/glm" />
+      <file path="$PROJECT_DIR$/glm2" />
     </excludeRoots>
   </component>
 </project>
