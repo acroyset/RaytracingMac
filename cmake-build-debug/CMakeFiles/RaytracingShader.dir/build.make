@@ -43,19 +43,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "C:\Users\acroy\AppData\Local\JetBrains\CLion 2025.1.3\bin\cmake\win\x64\bin\cmake.exe"
+CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2025.1.3\bin\cmake\win\x64\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "C:\Users\acroy\AppData\Local\JetBrains\CLion 2025.1.3\bin\cmake\win\x64\bin\cmake.exe" -E rm -f
+RM = "C:\Program Files\JetBrains\CLion 2025.1.3\bin\cmake\win\x64\bin\cmake.exe" -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "C:\Users\acroy\Desktop\C++ Projects\Math\RaytracingShader"
+CMAKE_SOURCE_DIR = "C:\Users\acroy\Desktop\C++ Projects\Graphics\RaytracingShader"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "C:\Users\acroy\Desktop\C++ Projects\Math\RaytracingShader\cmake-build-debug"
+CMAKE_BINARY_DIR = "C:\Users\acroy\Desktop\C++ Projects\Graphics\RaytracingShader\cmake-build-debug"
 
 # Include any dependencies generated for this target.
 include CMakeFiles/RaytracingShader.dir/depend.make
@@ -73,18 +73,18 @@ CMakeFiles/RaytracingShader.dir/codegen:
 
 CMakeFiles/RaytracingShader.dir/main.cpp.obj: CMakeFiles/RaytracingShader.dir/flags.make
 CMakeFiles/RaytracingShader.dir/main.cpp.obj: CMakeFiles/RaytracingShader.dir/includes_CXX.rsp
-CMakeFiles/RaytracingShader.dir/main.cpp.obj: C:/Users/acroy/Desktop/C++\ Projects/Math/RaytracingShader/main.cpp
+CMakeFiles/RaytracingShader.dir/main.cpp.obj: C:/Users/acroy/Desktop/C++\ Projects/Graphics/RaytracingShader/main.cpp
 CMakeFiles/RaytracingShader.dir/main.cpp.obj: CMakeFiles/RaytracingShader.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\acroy\Desktop\C++ Projects\Math\RaytracingShader\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/RaytracingShader.dir/main.cpp.obj"
-	C:\Users\acroy\AppData\Local\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RaytracingShader.dir/main.cpp.obj -MF CMakeFiles\RaytracingShader.dir\main.cpp.obj.d -o CMakeFiles\RaytracingShader.dir\main.cpp.obj -c "C:\Users\acroy\Desktop\C++ Projects\Math\RaytracingShader\main.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\acroy\Desktop\C++ Projects\Graphics\RaytracingShader\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/RaytracingShader.dir/main.cpp.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RaytracingShader.dir/main.cpp.obj -MF CMakeFiles\RaytracingShader.dir\main.cpp.obj.d -o CMakeFiles\RaytracingShader.dir\main.cpp.obj -c "C:\Users\acroy\Desktop\C++ Projects\Graphics\RaytracingShader\main.cpp"
 
 CMakeFiles/RaytracingShader.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/RaytracingShader.dir/main.cpp.i"
-	C:\Users\acroy\AppData\Local\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\acroy\Desktop\C++ Projects\Math\RaytracingShader\main.cpp" > CMakeFiles\RaytracingShader.dir\main.cpp.i
+	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\acroy\Desktop\C++ Projects\Graphics\RaytracingShader\main.cpp" > CMakeFiles\RaytracingShader.dir\main.cpp.i
 
 CMakeFiles/RaytracingShader.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/RaytracingShader.dir/main.cpp.s"
-	C:\Users\acroy\AppData\Local\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\acroy\Desktop\C++ Projects\Math\RaytracingShader\main.cpp" -o CMakeFiles\RaytracingShader.dir\main.cpp.s
+	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\acroy\Desktop\C++ Projects\Graphics\RaytracingShader\main.cpp" -o CMakeFiles\RaytracingShader.dir\main.cpp.s
 
 # Object files for target RaytracingShader
 RaytracingShader_OBJECTS = \
@@ -100,7 +100,7 @@ RaytracingShader.exe: libglad.a
 RaytracingShader.exe: CMakeFiles/RaytracingShader.dir/linkLibs.rsp
 RaytracingShader.exe: CMakeFiles/RaytracingShader.dir/objects1.rsp
 RaytracingShader.exe: CMakeFiles/RaytracingShader.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="C:\Users\acroy\Desktop\C++ Projects\Math\RaytracingShader\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable RaytracingShader.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="C:\Users\acroy\Desktop\C++ Projects\Graphics\RaytracingShader\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable RaytracingShader.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\RaytracingShader.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -112,6 +112,6 @@ CMakeFiles/RaytracingShader.dir/clean:
 .PHONY : CMakeFiles/RaytracingShader.dir/clean
 
 CMakeFiles/RaytracingShader.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" "C:\Users\acroy\Desktop\C++ Projects\Math\RaytracingShader" "C:\Users\acroy\Desktop\C++ Projects\Math\RaytracingShader" "C:\Users\acroy\Desktop\C++ Projects\Math\RaytracingShader\cmake-build-debug" "C:\Users\acroy\Desktop\C++ Projects\Math\RaytracingShader\cmake-build-debug" "C:\Users\acroy\Desktop\C++ Projects\Math\RaytracingShader\cmake-build-debug\CMakeFiles\RaytracingShader.dir\DependInfo.cmake" "--color=$(COLOR)"
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" "C:\Users\acroy\Desktop\C++ Projects\Graphics\RaytracingShader" "C:\Users\acroy\Desktop\C++ Projects\Graphics\RaytracingShader" "C:\Users\acroy\Desktop\C++ Projects\Graphics\RaytracingShader\cmake-build-debug" "C:\Users\acroy\Desktop\C++ Projects\Graphics\RaytracingShader\cmake-build-debug" "C:\Users\acroy\Desktop\C++ Projects\Graphics\RaytracingShader\cmake-build-debug\CMakeFiles\RaytracingShader.dir\DependInfo.cmake" "--color=$(COLOR)"
 .PHONY : CMakeFiles/RaytracingShader.dir/depend
 

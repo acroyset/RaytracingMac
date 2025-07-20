@@ -57,11 +57,11 @@
 			[
 				{
 					"backtrace" : 2,
-					"path" : "C:/Users/acroy/Desktop/C++ Projects/Math/RaytracingShader/external/glad/include"
+					"path" : "C:/Users/acroy/Desktop/C++ Projects/Graphics/RaytracingShader/external/glad/include"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "C:/Users/acroy/Desktop/C++ Projects/Math/RaytracingShader/glm"
+					"path" : "C:/Users/acroy/Desktop/C++ Projects/Graphics/RaytracingShader/glm"
 				}
 			],
 			"language" : "C",

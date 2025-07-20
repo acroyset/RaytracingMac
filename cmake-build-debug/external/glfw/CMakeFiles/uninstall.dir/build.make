@@ -43,19 +43,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "C:\Users\acroy\AppData\Local\JetBrains\CLion 2025.1.3\bin\cmake\win\x64\bin\cmake.exe"
+CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2025.1.3\bin\cmake\win\x64\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "C:\Users\acroy\AppData\Local\JetBrains\CLion 2025.1.3\bin\cmake\win\x64\bin\cmake.exe" -E rm -f
+RM = "C:\Program Files\JetBrains\CLion 2025.1.3\bin\cmake\win\x64\bin\cmake.exe" -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "C:\Users\acroy\Desktop\C++ Projects\Math\RaytracingShader"
+CMAKE_SOURCE_DIR = "C:\Users\acroy\Desktop\C++ Projects\Graphics\RaytracingShader"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "C:\Users\acroy\Desktop\C++ Projects\Math\RaytracingShader\cmake-build-debug"
+CMAKE_BINARY_DIR = "C:\Users\acroy\Desktop\C++ Projects\Graphics\RaytracingShader\cmake-build-debug"
 
 # Utility rule file for uninstall.
 
@@ -66,7 +66,7 @@ include external/glfw/CMakeFiles/uninstall.dir/compiler_depend.make
 include external/glfw/CMakeFiles/uninstall.dir/progress.make
 
 external/glfw/CMakeFiles/uninstall:
-	cd /d C:\Users\acroy\Desktop\C__PRO~1\Math\RAYTRA~1\CMAKE-~1\external\glfw && "C:\Users\acroy\AppData\Local\JetBrains\CLion 2025.1.3\bin\cmake\win\x64\bin\cmake.exe" -P "C:/Users/acroy/Desktop/C++ Projects/Math/RaytracingShader/cmake-build-debug/external/glfw/cmake_uninstall.cmake"
+	cd /d C:\Users\acroy\Desktop\C__PRO~1\Graphics\RAYTRA~1\CMAKE-~1\external\glfw && "C:\Program Files\JetBrains\CLion 2025.1.3\bin\cmake\win\x64\bin\cmake.exe" -P "C:/Users/acroy/Desktop/C++ Projects/Graphics/RaytracingShader/cmake-build-debug/external/glfw/cmake_uninstall.cmake"
 
 external/glfw/CMakeFiles/uninstall.dir/codegen:
 .PHONY : external/glfw/CMakeFiles/uninstall.dir/codegen
@@ -80,10 +80,10 @@ external/glfw/CMakeFiles/uninstall.dir/build: uninstall
 .PHONY : external/glfw/CMakeFiles/uninstall.dir/build
 
 external/glfw/CMakeFiles/uninstall.dir/clean:
-	cd /d C:\Users\acroy\Desktop\C__PRO~1\Math\RAYTRA~1\CMAKE-~1\external\glfw && $(CMAKE_COMMAND) -P CMakeFiles\uninstall.dir\cmake_clean.cmake
+	cd /d C:\Users\acroy\Desktop\C__PRO~1\Graphics\RAYTRA~1\CMAKE-~1\external\glfw && $(CMAKE_COMMAND) -P CMakeFiles\uninstall.dir\cmake_clean.cmake
 .PHONY : external/glfw/CMakeFiles/uninstall.dir/clean
 
 external/glfw/CMakeFiles/uninstall.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" "C:\Users\acroy\Desktop\C++ Projects\Math\RaytracingShader" "C:\Users\acroy\Desktop\C++ Projects\Math\RaytracingShader\external\glfw" "C:\Users\acroy\Desktop\C++ Projects\Math\RaytracingShader\cmake-build-debug" "C:\Users\acroy\Desktop\C++ Projects\Math\RaytracingShader\cmake-build-debug\external\glfw" "C:\Users\acroy\Desktop\C++ Projects\Math\RaytracingShader\cmake-build-debug\external\glfw\CMakeFiles\uninstall.dir\DependInfo.cmake" "--color=$(COLOR)"
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" "C:\Users\acroy\Desktop\C++ Projects\Graphics\RaytracingShader" "C:\Users\acroy\Desktop\C++ Projects\Graphics\RaytracingShader\external\glfw" "C:\Users\acroy\Desktop\C++ Projects\Graphics\RaytracingShader\cmake-build-debug" "C:\Users\acroy\Desktop\C++ Projects\Graphics\RaytracingShader\cmake-build-debug\external\glfw" "C:\Users\acroy\Desktop\C++ Projects\Graphics\RaytracingShader\cmake-build-debug\external\glfw\CMakeFiles\uninstall.dir\DependInfo.cmake" "--color=$(COLOR)"
 .PHONY : external/glfw/CMakeFiles/uninstall.dir/depend
 

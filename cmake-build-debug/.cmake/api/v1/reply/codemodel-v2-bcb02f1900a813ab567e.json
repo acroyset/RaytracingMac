@@ -115,21 +115,21 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "RaytracingShader::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-RaytracingShader-Debug-11be987cd2ee33640649.json",
+					"jsonFile" : "target-RaytracingShader-Debug-90608274ebccc8537ca2.json",
 					"name" : "RaytracingShader",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "glad::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-glad-Debug-b383bc3bf3140cff3001.json",
+					"jsonFile" : "target-glad-Debug-1b5ac5283ba0534e4c01.json",
 					"name" : "glad",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 2,
 					"id" : "glfw::@ca12bac854c2ac6b2230",
-					"jsonFile" : "target-glfw-Debug-6f5c3985b6d8fd36170d.json",
+					"jsonFile" : "target-glfw-Debug-590ba1adc7d32bb09899.json",
 					"name" : "glfw",
 					"projectIndex" : 1
 				},
@@ -153,8 +153,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "C:/Users/acroy/Desktop/C++ Projects/Math/RaytracingShader/cmake-build-debug",
-		"source" : "C:/Users/acroy/Desktop/C++ Projects/Math/RaytracingShader"
+		"build" : "C:/Users/acroy/Desktop/C++ Projects/Graphics/RaytracingShader/cmake-build-debug",
+		"source" : "C:/Users/acroy/Desktop/C++ Projects/Graphics/RaytracingShader"
 	},
 	"version" : 
 	{

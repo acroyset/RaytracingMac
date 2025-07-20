@@ -43,19 +43,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "C:\Users\acroy\AppData\Local\JetBrains\CLion 2025.1.3\bin\cmake\win\x64\bin\cmake.exe"
+CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2025.1.3\bin\cmake\win\x64\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "C:\Users\acroy\AppData\Local\JetBrains\CLion 2025.1.3\bin\cmake\win\x64\bin\cmake.exe" -E rm -f
+RM = "C:\Program Files\JetBrains\CLion 2025.1.3\bin\cmake\win\x64\bin\cmake.exe" -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "C:\Users\acroy\Desktop\C++ Projects\Math\RaytracingShader"
+CMAKE_SOURCE_DIR = "C:\Users\acroy\Desktop\C++ Projects\Graphics\RaytracingShader"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "C:\Users\acroy\Desktop\C++ Projects\Math\RaytracingShader\cmake-build-debug"
+CMAKE_BINARY_DIR = "C:\Users\acroy\Desktop\C++ Projects\Graphics\RaytracingShader\cmake-build-debug"
 
 # Utility rule file for update_mappings.
 
@@ -66,8 +66,8 @@ include external/glfw/src/CMakeFiles/update_mappings.dir/compiler_depend.make
 include external/glfw/src/CMakeFiles/update_mappings.dir/progress.make
 
 external/glfw/src/CMakeFiles/update_mappings:
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir="C:\Users\acroy\Desktop\C++ Projects\Math\RaytracingShader\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Updating gamepad mappings from upstream repository"
-	cd /d C:\Users\acroy\Desktop\C__PRO~1\Math\RAYTRA~1\external\glfw\src && "C:\Users\acroy\AppData\Local\JetBrains\CLion 2025.1.3\bin\cmake\win\x64\bin\cmake.exe" -P "C:/Users/acroy/Desktop/C++ Projects/Math/RaytracingShader/external/glfw/CMake/GenerateMappings.cmake" mappings.h.in mappings.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir="C:\Users\acroy\Desktop\C++ Projects\Graphics\RaytracingShader\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Updating gamepad mappings from upstream repository"
+	cd /d C:\Users\acroy\Desktop\C__PRO~1\Graphics\RAYTRA~1\external\glfw\src && "C:\Program Files\JetBrains\CLion 2025.1.3\bin\cmake\win\x64\bin\cmake.exe" -P "C:/Users/acroy/Desktop/C++ Projects/Graphics/RaytracingShader/external/glfw/CMake/GenerateMappings.cmake" mappings.h.in mappings.h
 
 external/glfw/src/CMakeFiles/update_mappings.dir/codegen:
 .PHONY : external/glfw/src/CMakeFiles/update_mappings.dir/codegen
@@ -81,10 +81,10 @@ external/glfw/src/CMakeFiles/update_mappings.dir/build: update_mappings
 .PHONY : external/glfw/src/CMakeFiles/update_mappings.dir/build
 
 external/glfw/src/CMakeFiles/update_mappings.dir/clean:
-	cd /d C:\Users\acroy\Desktop\C__PRO~1\Math\RAYTRA~1\CMAKE-~1\external\glfw\src && $(CMAKE_COMMAND) -P CMakeFiles\update_mappings.dir\cmake_clean.cmake
+	cd /d C:\Users\acroy\Desktop\C__PRO~1\Graphics\RAYTRA~1\CMAKE-~1\external\glfw\src && $(CMAKE_COMMAND) -P CMakeFiles\update_mappings.dir\cmake_clean.cmake
 .PHONY : external/glfw/src/CMakeFiles/update_mappings.dir/clean
 
 external/glfw/src/CMakeFiles/update_mappings.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" "C:\Users\acroy\Desktop\C++ Projects\Math\RaytracingShader" "C:\Users\acroy\Desktop\C++ Projects\Math\RaytracingShader\external\glfw\src" "C:\Users\acroy\Desktop\C++ Projects\Math\RaytracingShader\cmake-build-debug" "C:\Users\acroy\Desktop\C++ Projects\Math\RaytracingShader\cmake-build-debug\external\glfw\src" "C:\Users\acroy\Desktop\C++ Projects\Math\RaytracingShader\cmake-build-debug\external\glfw\src\CMakeFiles\update_mappings.dir\DependInfo.cmake" "--color=$(COLOR)"
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" "C:\Users\acroy\Desktop\C++ Projects\Graphics\RaytracingShader" "C:\Users\acroy\Desktop\C++ Projects\Graphics\RaytracingShader\external\glfw\src" "C:\Users\acroy\Desktop\C++ Projects\Graphics\RaytracingShader\cmake-build-debug" "C:\Users\acroy\Desktop\C++ Projects\Graphics\RaytracingShader\cmake-build-debug\external\glfw\src" "C:\Users\acroy\Desktop\C++ Projects\Graphics\RaytracingShader\cmake-build-debug\external\glfw\src\CMakeFiles\update_mappings.dir\DependInfo.cmake" "--color=$(COLOR)"
 .PHONY : external/glfw/src/CMakeFiles/update_mappings.dir/depend
 

@@ -1,2 +1,2 @@
-C:\Users\acroy\AppData\Local\JETBRA~1\CLION2~1.3\bin\mingw\bin\ar.exe qc libglad.a CMakeFiles/glad.dir/external/glad/src/glad.c.obj
-C:\Users\acroy\AppData\Local\JETBRA~1\CLION2~1.3\bin\mingw\bin\ranlib.exe libglad.a
+C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\ar.exe qc libglad.a CMakeFiles/glad.dir/external/glad/src/glad.c.obj
+C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\ranlib.exe libglad.a

@@ -122,15 +122,15 @@
 			[
 				{
 					"backtrace" : 6,
-					"path" : "C:/Users/acroy/Desktop/C++ Projects/Math/RaytracingShader/external/glfw/include"
+					"path" : "C:/Users/acroy/Desktop/C++ Projects/Graphics/RaytracingShader/external/glfw/include"
 				},
 				{
 					"backtrace" : 7,
-					"path" : "C:/Users/acroy/Desktop/C++ Projects/Math/RaytracingShader/external/glfw/src"
+					"path" : "C:/Users/acroy/Desktop/C++ Projects/Graphics/RaytracingShader/external/glfw/src"
 				},
 				{
 					"backtrace" : 7,
-					"path" : "C:/Users/acroy/Desktop/C++ Projects/Math/RaytracingShader/cmake-build-debug/external/glfw/src"
+					"path" : "C:/Users/acroy/Desktop/C++ Projects/Graphics/RaytracingShader/cmake-build-debug/external/glfw/src"
 				}
 			],
 			"language" : "C",
