@@ -70,12 +70,12 @@ void main() {
     vec2 sceenCoord = vec2((2*fragCoord.x-1) * aspectRatio, 2*fragCoord.y-1);
 
     uvec2 pixel = uvec2(fragCoord.x * resolution.x, fragCoord.y * resolution.y * aspectRatio);
-    uint state = pixel.x + pixel.y * uint(resolution.x) + uint(resolution.x*resolution.y*(frameCount%700)+frameCount);
+    uint state = pixel.x + pixel.y * uint(resolution.x) + uint(resolution.x*resolution.y*(frameCount%1400)+frameCount);
 
     vec3 totalColor = vec3(0,0,0);
-    int samples = 4;
+    int samples = 25;
     int bounceLim = 12;
-    int aa = 2;
+    int aa = 5;
 
     int aaCycle = 0;
     for (int s = 0; s < samples; s++) {

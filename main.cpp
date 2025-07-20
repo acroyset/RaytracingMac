@@ -1,13 +1,15 @@
+#include <chrono>
 #include <ctime>
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
 #include <iostream>
 #include <fstream>
 #include <sstream>
+#include <thread>
 #include <glm/glm.hpp>
 #include <glm/gtc/type_ptr.hpp>
 
-bool apple = true;
+bool apple = false;
 
 GLFWwindow* window = nullptr;
 GLuint shaderProgram = 0;
@@ -179,40 +181,18 @@ float randomValue(unsigned int& state){
 }
 
 class Timer {
-    std::clock_t start;
-    std::clock_t pause{};
-    bool paused = false;
+    std::chrono::system_clock::time_point start;
 
 public:
     explicit Timer(const bool paused = false) {
-        start = std::clock();
-        this->paused = paused;
-        if (paused) {
-            pause = std::clock();
-        }
+        start = std::chrono::high_resolution_clock::now();
     }
 
-    float reset() {
-        const std::clock_t end = std::clock();
-        const float t = (float)(end - start) / CLOCKS_PER_SEC;
+    int reset() {
+        const std::chrono::system_clock::time_point end = std::chrono::high_resolution_clock::now();
+        const auto duration = std::chrono::duration_cast<std::chrono::microseconds>(end - start);
         start = end;
-        return t;
-    }
-    [[nodiscard]] float elapsed() const {
-        const std::clock_t offset = paused ? std::clock() - pause : 0;
-        const std::clock_t end = std::clock();
-        const float t = (float)(end - start - offset) / CLOCKS_PER_SEC;
-        return t;
-    }
-    void start_stop() {
-        if (paused) {
-            paused = false;
-            const std::clock_t elapsed = std::clock() - pause;
-            start += elapsed;
-        } else {
-            paused = true;
-            pause = std::clock();
-        }
+        return duration.count();
     }
 };
 
@@ -282,13 +262,13 @@ int main() {
 
     Timer deltaTimer;
     while (!shouldClose()) {
-        const auto dt = float(deltaTimer.reset());
+        const auto dt = deltaTimer.reset()/1000000.0f;
         glBindFramebuffer(GL_FRAMEBUFFER, pingpongFBO[ping]);
         glViewport(0, 0, width, height);
         glClear(GL_COLOR_BUFFER_BIT);
         glUseProgram(shaderProgram);
 
-        bool moved = updateCamera(cameraPos, camForward, camUp, camRight, width, height, 5000, 2, dt);
+        bool moved = updateCamera(cameraPos, camForward, camUp, camRight, width, height, 500, 2, dt);
 
 
         glUniform3fv(glGetUniformLocation(shaderProgram, "spheres[0]"), size, glm::value_ptr(spheres[0]));
